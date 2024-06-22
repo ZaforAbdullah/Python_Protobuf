@@ -1,0 +1,32 @@
+syntax = "proto3";
+package proto;
+
+message Proto {
+
+   string username = 1;
+
+   int32 total_capcity = 2;
+   int64 mobile = 3;
+   float base_ticket_price = 4;
+
+   bool drive_in = 5;
+
+   enum PAYMENT_SYSTEM{
+      CASH = 0;
+      CREDIT_CARD = 1;
+      DEBIT_CARD = 2;
+      APP = 3;  
+   }
+   PAYMENT_SYSTEM payment = 6;
+
+   repeated string snacks = 7;
+
+   map<string, int32> movieTicketPrice = 8;
+
+   ProtoChild protochild = 9;
+}
+
+message ProtoChild{
+   string name = 1;
+   string age = 2;
+}
