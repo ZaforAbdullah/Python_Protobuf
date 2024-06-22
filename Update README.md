@@ -18,7 +18,7 @@ docker exec py_protobuf bash -c 'python protoWriterCLI.py Username 100 123456789
 ```
 docker exec py_protobuf bash -c 'python protoWriter.py && python protoReader.py'
 ```
-## Code Structure (After DOcker build)
+## Code Structure (After Docker build)
 ```
  |- - - path_helpers.py
  |- - - protoCompile
